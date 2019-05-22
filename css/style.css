@@ -1,0 +1,123 @@
+/* Google Font*/
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Poppins|Quicksand|Roboto+Condensed&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header,
+section{
+    overflow-x: hidden;
+}
+
+header a{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+
+footer{
+    background-color: #333333;
+}
+
+header .container-fluid{
+    background-color: white;
+    opacity: 80%;
+}
+
+#nav1{
+    background-color:white !important;
+}
+
+header .nav-item {
+    padding: 0.8em;
+}
+
+header .navbar-brand{
+    padding-left: 5rem;
+}
+
+header .nav-link:hover{
+    color: brown;
+}
+
+header .navbar-brand img{
+    width: 8%;
+    margin-right: 2vmin;
+}
+
+
+.section-1 .row{
+    margin-top: 10vmin;
+}
+
+.section-1 .row1 i{
+    font-size: 3em;
+    padding: 0 0 10vmin 0;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    transition: width 2s;
+}
+
+.section-1 .row1 i:hover{
+    font-size: 4em;
+    padding: 0 0 7.5vmin 0;
+}
+
+.section-2{
+    padding-top: 20vmin;
+    padding-bottom: 20vmin;
+    background-color:cornflowerblue;
+}
+
+
+.section-2 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-2 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 10vmin 10vmin 10vmin 10vmin;
+    box-shadow: 0px 25px 42px rgb(0, 0, 0, 0.4);
+}
+
+footer{
+    padding: 2vmin 0vmin 2vmin 0vmin;
+}
+
+h2{
+    color: white;
+    padding: 0vmin 5vmin 0vmin 5vmin;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+}
+
+.section-3{
+    padding: 20vmin 10vmin 10vmin 10vmin;
+}
+
+.section-4{
+    padding: 20vmin 10vmin 10vmin 10vmin;
+}
+
+footer .column i{
+    color: white;
+}
+
+footer .column i:hover{
+    color:orange;
+}
+
+footer .column a+a{
+    padding: 0 0.2em 0 0.2em;
+}
