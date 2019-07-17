@@ -15,7 +15,7 @@ section{
 }
 
 header a{
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Quicksand';
     font-size: 1em;
     color: black;
 }
@@ -95,6 +95,14 @@ footer{
     padding: 2vmin 0vmin 2vmin 0vmin;
 }
 
+.section-2 .row .col-md-6 .panel .pt-4{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.section-2 .row .col-md-6 .panel h1{
+    font-family: 'Quicksand';
+}
+
 h2{
     color: white;
     padding: 0vmin 5vmin 0vmin 5vmin;
@@ -102,12 +110,33 @@ h2{
     font-size: 1em;
 }
 
+
 .section-3{
     padding: 20vmin 10vmin 10vmin 10vmin;
 }
 
+.section-3 h4{
+    font-family: 'Quicksand';
+    font-size: 5vmin;
+    padding: 0 0 10vmin 0;
+}
+
+.section-3 .card-deck .card h5{
+    font-family: 'Quicksand';
+}
+
+.section-3 .card-deck .card p{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .section-4{
     padding: 20vmin 10vmin 10vmin 10vmin;
+}
+
+.section-4 h4{
+    font-family: 'Quicksand';
+    font-size: 5vmin;
+    padding: 0 0 10vmin 0;
 }
 
 footer .column i{
