@@ -51,6 +51,9 @@ header .navbar-brand img{
     margin-right: 2vmin;
 }
 
+header .navbar .navbar-toggler i{
+    color: darkgrey;
+}
 
 .section-1 .row{
     margin-top: 10vmin;
