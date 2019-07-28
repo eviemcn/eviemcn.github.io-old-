@@ -1,15 +1,14 @@
 @media only screen and (max-width: 768px){
     header .navbar-brand{
-        padding-left: 3rem;
-        padding-top: 2rem;
+        display: none;
     }
     .section-2 .row .col-md-6 .panel{
         position: initial;
         width: initial;
         height: initial;
     }
-}
-
-@media only screen and (max-width: 320px){
-    
+    header .navbar .navbar-toggler{
+        align-self: flex-end !important;
+        padding: 5vmin 0 0 5vmin;
+    }
 }
