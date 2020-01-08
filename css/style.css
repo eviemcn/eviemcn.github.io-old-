@@ -128,6 +128,10 @@ h2{
     font-family: 'Quicksand';
 }
 
+.section-3 .card-deck .card .dad-card-body h5{
+    color: black;
+}
+
 .section-3 .card-deck .card p{
     font-family: 'IBM Plex Sans', sans-serif;
 }
