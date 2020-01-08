@@ -126,7 +126,7 @@ h2{
 
 .section-3 .card-deck .card h5{
     font-family: 'Quicksand';
-    color: black;
+    color: black !important;
 }
 
 .section-3 .card-deck .card p{
