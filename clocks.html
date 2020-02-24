@@ -65,14 +65,27 @@
               <div class="row text-center">
                   <div class="col-md-4"></div>
                   <div class="col-md-4">
+                    <canvas id="myCanvas" width="200" height="100"
+                    style="border:1px solid #c3c3c3;">
+                    Your browser does not support the canvas element.
+                    </canvas>
+                      
                     <h7 id="time"></h7>
 
                     <script>
-                    var d = new Date();
-                    var hr = d.getHours();
-                    var mn = d.getMinutes();
+                        
+                        var canvas = document.getElementById("myCanvas");
+                        var ctx = canvas.getContext("2d");
+                        ctx.fillStyle = "#FF0000";
+                        ctx.fillRect(0,0,150,75);
+                        ctx.fillStyle = "black";
+                        ctx.font = "30px Arial";
+                        ctx.fillText("hi", 10, 40);
+                        var d = new Date();
+                        var hr = d.getHours();
+                        var mn = d.getMinutes();
                     
-                    document.getElementById('time').innerHTML = hr + ":" + mn;
+                        document.getElementById('time').innerHTML = hr + ":" + mn;
                     </script>
                   </div>
                   <div class="col-md-4"></div>
