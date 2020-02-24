@@ -65,9 +65,7 @@
               <div class="row text-center">
                   <div class="col-md-4"></div>
                   <div class="col-md-4">
-                    <canvas id="myCanvas" width="500" height="500"
-                    Your browser does not support the canvas element.
-                    </canvas>
+                    <h7 id="time"></h7>
 
                     <script>
                     var canvas = document.getElementById("myCanvas");
@@ -77,7 +75,8 @@
                     var d = new Date();
                     var hr = d.getHours();
                     var mn = d.getMinutes();
-                    var sc = d.getSeconds();
+                    
+                    document.getElementById('time').innerHTML = hr + ":" + mn;
                     </script>
                   </div>
                   <div class="col-md-4"></div>
