@@ -165,6 +165,10 @@ h2{
     padding: 0 0 0vmin 0;
 }
 
+.clock-section .dropdown{
+    padding-top: 10vmin;    
+}
+    
 footer .column i{
     color: white;
 }
