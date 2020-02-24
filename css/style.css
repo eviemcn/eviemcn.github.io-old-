@@ -166,7 +166,8 @@ h2{
 }
 
 .clock-section .dropdown{
-    padding-top: 10vmin;    
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
 }
     
 footer .column i{
