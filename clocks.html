@@ -70,7 +70,7 @@
                     Your browser does not support the canvas element.
                     </canvas>
                     
-                    <img src="https://images.bonanzastatic.com/afu/images/1031/538d/73b6_6877533845/s-l1600.jpg"/>
+                    <img id="digital-clock" src="https://images.bonanzastatic.com/afu/images/1031/538d/73b6_6877533845/s-l1600.jpg"/>
                     <h7 id="time"></h7>
 
                     <script>
@@ -79,6 +79,10 @@
                         var ctx = canvas.getContext("2d");
                         ctx.fillStyle = "#FF0000";
                         ctx.fillRect(0,0,150,75);
+                        
+                        var img = document.getElementById("digital-clock");
+                        ctx.drawImage(img, 10, 10);
+                        
                         ctx.fillStyle = "black";
                         ctx.font = "30px Arial";
                         ctx.fillText("hi", 10, 40);
