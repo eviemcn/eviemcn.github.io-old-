@@ -79,16 +79,15 @@
                     <canvas id="myCanvas" width="500" height="300">
                     Your browser does not support the canvas element.
                     </canvas>
-                    
-                    <img id="digital-clock" src="https://images.bonanzastatic.com/afu/images/1031/538d/73b6_6877533845/s-l1600.jpg" width="10%" style="display:none"/>
 
                     <script>
                         
                         var canvas = document.getElementById("myCanvas");
                         var ctx = canvas.getContext("2d");
                         
-                        var img = document.getElementById("digital-clock");
-                        ctx.drawImage(img, 0, 0, 460, 280);
+                        var img = new Image(460, 200);
+                        img.src = 'https://images.bonanzastatic.com/afu/images/1031/538d/73b6_6877533845/s-l1600.jpg';
+                        ctx.drawImage(img, 0, 0);
                         
                         ctx.fillStyle = "black";
                         ctx.font = "30px Arial";
