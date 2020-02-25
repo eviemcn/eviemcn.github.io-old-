@@ -76,6 +76,7 @@
                       </div>
                   </div>
                   <div class="col-md-4 clocks-canvas">
+                    <span style="font-family: 'DS-DIGI';">&nbsp;</span>
                     <canvas id="myCanvas" width="500" height="350">
                     Your browser does not support the canvas element.
                     </canvas>
@@ -90,7 +91,7 @@
                         ctx.drawImage(img, 0, -100, 500, 500);
                         
                         ctx.fillStyle = "black";
-                        ctx.font = "30px Arial";
+                        ctx.font = "30px DS-DIGI";
                         var d = new Date();
                         var hr = d.getHours();
                         var mn = d.getMinutes();
