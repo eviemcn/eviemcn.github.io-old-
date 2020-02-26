@@ -69,7 +69,7 @@
                             Select Clock
                           </button>
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" id="retro" href="#">Retro</a>
+                            <a class="dropdown-item" onclick="retro()">Retro</a>
                             <a class="dropdown-item" href="#">Illustrated</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                           </div>
@@ -85,6 +85,7 @@
                         
                         var ctx = document.getElementById('myCanvas').getContext('2d');
                         var img = new Image();
+                        
                         img.src = '/assets/retro-clock-drawing.png';
                         img.onload = function(){
                           ctx.drawImage(this, 0, -100, 500, 500);
@@ -103,6 +104,27 @@
                           } else {
                             ctx.fillText(mn, 223, 185);
                           }
+                            
+                          retro(){
+                            img.src = '/assets/retro-clock-drawing.png';
+                            img.onload = function(){
+                              ctx.drawImage(this, 0, -100, 500, 500);
+                              ctx.font         = '100px Odibee Sans';
+                              var d = new Date();
+                              var hr = d.getHours();
+                              var mn = d.getMinutes();
+                              ctx.fillStyle = '#503228';
+                              if (hr < 10){
+                                  ctx.fillText(hr, 140, 185);
+                              } else{
+                                  ctx.fillText(hr, 91, 185);
+                              }
+                              if (mn < 10){
+                                ctx.fillText("0" + mn, 223, 185);
+                              } else {
+                                ctx.fillText(mn, 223, 185);
+                              }
+                            }
                         };
                         
                     </script>
