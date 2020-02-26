@@ -83,58 +83,43 @@
 
                     <script>
 
+                      function function1(){
+                          ctx.drawImage(this, 0, -100, 500, 500);
+                          ctx.font         = '100px Odibee Sans';
+                          var d = new Date();
+                          var hr = d.getHours();
+                          var mn = d.getMinutes();
+                          ctx.fillStyle = '#503228';
+                          if (hr < 10){
+                              ctx.fillText(hr, 140, 185);
+                          } else{
+                              ctx.fillText(hr, 91, 185);
+                          }
+                          if (mn < 10){
+                            ctx.fillText("0" + mn, 223, 185);
+                          } else {
+                            ctx.fillText(mn, 223, 185);
+                          }
+                      }
+
                       var ctx = document.getElementById('myCanvas').getContext('2d');
                       var img = new Image();
 
                       img.src = '/assets/retro-clock-drawing.png';
-                      img.onload = function1(){
-                          ctx.drawImage(this, 0, -100, 500, 500);
-                          ctx.font         = '100px Odibee Sans';
-                          var d = new Date();
-                          var hr = d.getHours();
-                          var mn = d.getMinutes();
-                          ctx.fillStyle = '#503228';
-                          if (hr < 10){
-                              ctx.fillText(hr, 140, 185);
-                          } else{
-                              ctx.fillText(hr, 91, 185);
-                          }
-                          if (mn < 10){
-                            ctx.fillText("0" + mn, 223, 185);
-                          } else {
-                            ctx.fillText(mn, 223, 185);
-                          }
-                      };
+                      img.onload = function1();
                           
                     
-                      retro(){
+                      function retro(){
                       img.src = '/assets/retro-clock-drawing.png';
-                        img.onload = function2(){
-                          ctx.drawImage(this, 0, -100, 500, 500);
-                          ctx.font         = '100px Odibee Sans';
-                          var d = new Date();
-                          var hr = d.getHours();
-                          var mn = d.getMinutes();
-                          ctx.fillStyle = '#503228';
-                          if (hr < 10){
-                              ctx.fillText(hr, 140, 185);
-                          } else{
-                              ctx.fillText(hr, 91, 185);
-                          }
-                          if (mn < 10){
-                            ctx.fillText("0" + mn, 223, 185);
-                          } else {
-                            ctx.fillText(mn, 223, 185);
-                          }
-                        }
-                      };
+                        img.onload = function1();
+                      }
                         
-                      illustrated(){
+                      function illustrated(){
                         img.src = 'https://images.app.goo.gl/4VsHKPpYJrWDPKpn6';
-                        img.onload = function3(){
+                        img.onload = function function2(){
                           ctx.drawImage(this, 0, 0, 500, 500);
                         }
-                      };
+                      }
                         
                     </script>
                   </div>
