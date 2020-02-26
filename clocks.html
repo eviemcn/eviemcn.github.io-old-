@@ -69,8 +69,8 @@
                             Select Clock
                           </button>
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" onclick="retro()" href="#">Retro</a>
-                            <a class="dropdown-item" href="#">Illustrated</a>
+                            <a class="dropdown-item" onclick="retro()">Retro</a>
+                            <a class="dropdown-item" onclick="illustrated()">Illustrated</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                           </div>
                       </div>
@@ -127,6 +127,12 @@
                             ctx.fillText(mn, 223, 185);
                           }
                         }
+                      }
+                        
+                      illustrated(){
+                        img.src = '/assets/retro-clock-drawing.png';
+                        img.onload = function(){
+                          ctx.drawImage(this, 0, -100, 500, 500);
                       }
                     };
                         
