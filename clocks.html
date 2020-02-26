@@ -82,6 +82,9 @@
                     </canvas>
 
                     <script>
+                      var ctx = document.getElementById('myCanvas').getContext('2d');
+                      var img = new Image();
+                      img.src = '/assets/retro-clock-drawing.png';
 
                       function function1(){
                           ctx.drawImage(this, 0, -100, 500, 500);
@@ -102,10 +105,6 @@
                           }
                       }
 
-                      var ctx = document.getElementById('myCanvas').getContext('2d');
-                      var img = new Image();
-
-                      img.src = '/assets/retro-clock-drawing.png';
                       img.onload = function1();
                           
                       /*
