@@ -87,11 +87,14 @@
                     </canvas>
 
                     <script>
-                      var ctx = document.getElementById('myCanvas').getContext('2d');
-                      var img = new Image();
-                      img.src = '/assets/retro-clock-drawing.png';
-
-                      img.onload = function function1(){
+                      
+                      function retro(){
+                        var ctx = document.getElementById('myCanvas').getContext('2d');
+                        const context = ctx.getContext('2d');
+                        context.clearRect(0, 0, ctx.width, ctx.height);
+                        var img = new Image();
+                        img.src = '/assets/retro-clock-drawing.png';
+                        img.onload = function function1(){
                           ctx.drawImage(this, 0, -100, 500, 500);
                           ctx.font         = '100px Odibee Sans';
                           var d = new Date();
@@ -108,22 +111,14 @@
                           } else {
                             ctx.fillText(mn, 223, 185);
                           }
-                      }
-
-                          
-                      
-                      function retro(){
-                        var ctx = document.getElementById('myCanvas').getContext('2d');
-                        const context = ctx.getContext('2d');
-                        context.clearRect(0, 0, ctx.width, ctx.height);
-                        img.src = '/assets/retro-clock-drawing.png';
-                        img.onload = function1();
+                        }
                       }
                         
                       function illustrated(){
                         var ctx = document.getElementById('myCanvas').getContext('2d');
                         const context = ctx.getContext('2d');
                         context.clearRect(0, 0, ctx.width, ctx.height);
+                        var img = new Image();
                         img.src = 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Janet-Jackson-The-Velvet-Rope-Album-Cover-web-optimised-820.jpg';
                         img.onload = function function2(){
                           ctx.drawImage(this, 0, 0, 500, 500);
@@ -135,6 +130,8 @@
                         const context = ctx.getContext('2d');
                         context.clearRect(0, 0, ctx.width, ctx.height); 
                       }
+                        
+                      window.onload = retro();
                         
                     </script>
                   </div>
