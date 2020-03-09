@@ -90,11 +90,6 @@
                       
                       function retro(){
                         var ctx = document.getElementById('myCanvas').getContext('2d');
-                        const context = ctx.getContext('2d');
-                        context.clearRect(0, 0, ctx.width, ctx.height);
-                        var w = ctx.width;
-                        ctx.width = 1;
-                        ctx.width = w;
                         var img = new Image();
                         img.src = '/assets/retro-clock-drawing.png';
                         img.onload = function function1(){
