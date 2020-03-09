@@ -113,6 +113,7 @@
                           
                       
                       function retro(){
+                        var ctx = document.getElementById('myCanvas').getContext('2d');
                         const context = ctx.getContext('2d');
                         context.clearRect(0, 0, ctx.width, ctx.height);
                         img.src = '/assets/retro-clock-drawing.png';
@@ -120,6 +121,7 @@
                       }
                         
                       function illustrated(){
+                        var ctx = document.getElementById('myCanvas').getContext('2d');
                         const context = ctx.getContext('2d');
                         context.clearRect(0, 0, ctx.width, ctx.height);
                         img.src = 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Janet-Jackson-The-Velvet-Rope-Album-Cover-web-optimised-820.jpg';
