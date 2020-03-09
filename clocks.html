@@ -71,7 +71,7 @@
                        <button type="button" class="btn btn-light" onclick="illustrated()">Illustrated</button>
                    </div>
                    <div class="col-md-1">
-                       <button type="button" class="btn btn-light">...</button>
+                       <button type="button" class="btn btn-light" onclick="clear()">Clear</button>
                    </div>
                    <div class="col-md-1">
                        <button type="button" class="btn btn-light">...</button>
@@ -128,6 +128,12 @@
                         img.onload = function function2(){
                           ctx.drawImage(this, 0, 0, 500, 500);
                         }
+                      }
+                        
+                      function clear(){
+                        var ctx = document.getElementById('myCanvas').getContext('2d');
+                        const context = ctx.getContext('2d');
+                        context.clearRect(0, 0, ctx.width, ctx.height); 
                       }
                         
                     </script>
