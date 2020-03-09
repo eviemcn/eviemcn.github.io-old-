@@ -113,20 +113,20 @@
                       }
                         
                       function illustrated(){
-                        var ctx = document.getElementById('myCanvas').getContext('2d');
-                        const context = ctx.getContext('2d');
-                        context.clearRect(0, 0, ctx.width, ctx.height);
-                        var img = new Image();
-                        img.src = 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Janet-Jackson-The-Velvet-Rope-Album-Cover-web-optimised-820.jpg';
-                        img.onload = function function2(){
-                          ctx.drawImage(this, 0, 0, 500, 500);
+                        var ct = document.getElementById('myCanvas').getContext('2d');
+                        const context = ct.getContext('2d');
+                        context.clearRect(0, 0, ct.width, ct.height);
+                        var img2 = new Image();
+                        img2.src = 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Janet-Jackson-The-Velvet-Rope-Album-Cover-web-optimised-820.jpg';
+                        img2.onload = function function2(){
+                          ct.drawImage(this, 0, 0, 500, 500);
                         }
                       }
                         
                       function clear(){
-                        var ctx = document.getElementById('myCanvas').getContext('2d');
-                        const context = ctx.getContext('2d');
-                        context.clearRect(0, 0, ctx.width, ctx.height);
+                        var c = document.getElementById('myCanvas').getContext('2d');
+                        const context = c.getContext('2d');
+                        context.clearRect(0, 0, c.width, c.height);
                       }
                         
                       window.onload = illustrated();
