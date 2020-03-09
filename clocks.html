@@ -113,11 +113,15 @@
                           
                       
                       function retro(){
-                      img.src = '/assets/retro-clock-drawing.png';
+                        const context = ctx.getContext('2d');
+                        context.clearRect(0, 0, ctx.width, ctx.height);
+                        img.src = '/assets/retro-clock-drawing.png';
                         img.onload = function1();
                       }
                         
                       function illustrated(){
+                        const context = ctx.getContext('2d');
+                        context.clearRect(0, 0, ctx.width, ctx.height);
                         img.src = 'https://images.app.goo.gl/4VsHKPpYJrWDPKpn6';
                         img.onload = function function2(){
                           ctx.drawImage(this, 0, 0, 500, 500);
