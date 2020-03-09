@@ -125,8 +125,8 @@
                         
                       function clear(){
                         var ctx = document.getElementById('myCanvas').getContext('2d');
-                        const context = ctx.getContext('2d');
-                        context.clearRect(0, 0, ctx.width, ctx.height); 
+                        ctx.fillStyle = "white";
+                        ctx.fillRect(0, 0, 500, 500);
                       }
                         
                       window.onload = retro();
