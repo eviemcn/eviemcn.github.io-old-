@@ -123,8 +123,8 @@
                         
                       function clear(){
                         var c = document.getElementById('myCanvas').getContext('2d');
-                        const context = c.getContext('2d');
-                        context.clearRect(0, 0, c.width, c.height);
+                        c.fillStyle = "white";
+                        c.drawRect(0, 0, 500, 400);
                       }
                         
                       window.onload = illustrated();
