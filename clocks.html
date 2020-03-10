@@ -125,8 +125,12 @@
                         
                       function clear(){
                         var c = document.getElementById('myCanvas').getContext('2d');
-                        c.fillStyle = "#ffffff";
-                        c.fillRect(0, 0, 500, 400);    
+                        var img3 = new Image();
+                        img3.src = 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Janet-Jackson-The-Velvet-Rope-Album-Cover-web-optimised-820.jpg';
+                        img3.onload = function function2(){
+                          c.fillStyle = "#ffffff";
+                          c.fillRect(0, 0, 500, 400);
+                        }  
                       }
                         
                       function displayTime(){
