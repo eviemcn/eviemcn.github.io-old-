@@ -165,7 +165,7 @@ h2{
 }
 
 .title-section{
-    padding: 20vmin 10vmin 10vmin 10vmin;
+    padding: 20vmin 10vmin 0vmin 10vmin;
 }
 
 .title-section h4{
@@ -174,12 +174,8 @@ h2{
     padding: 0 0 3vmin 0;
 }
 
-.clock-section .dropdown{
-    padding-top: 10vmin;
-}
-
-.clocks-section .clocks-dropdown{
-    text-align: center;
+.clock-section .buttons-row{
+    padding-bottom: 5vmin; 
 }
     
 footer .column i{
