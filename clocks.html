@@ -63,17 +63,20 @@
         <section class="clock-section">
            <div class="container-fluid p-0">
                <div class="row text-center buttons-row">
-                   <div class="col-md-3"></div>
-                   <div class="col-md-2">
+                   <div class="col-md-4"></div>
+                   <div class="col-md-1">
                        <button type="button" class="btn btn-light" onclick="retro()">Retro</button>
                    </div>
-                   <div class="col-md-2">
+                   <div class="col-md-1">
                        <button type="button" class="btn btn-light" onclick="illustrated()">Illustrated</button>
                    </div>
-                   <div class="col-md-2">
+                   <div class="col-md-1">
                        <button type="button" class="btn btn-light" onclick="clear()">Clear</button>
                    </div>
-                   <div class="col-md-3"></div>            
+                   <div class="col-md-1">
+                       <button type="button" class="btn btn-light" onclick="displayTime()">Time</button>
+                   </div>
+                   <div class="col-md-4"></div>            
                </div>
               <div class="row text-center">
                   <div class="col-md-4"></div>
@@ -124,6 +127,21 @@
                         var c = document.getElementById('myCanvas').getContext('2d');
                         c.fillStyle = "#ffffff";
                         c.fillRect(0, 0, 500, 400);    
+                      }
+                        
+                      displayTime(){
+                        var cx = document.getElementById('myCanvas').getContext('2d');
+                        var img4 = new Image();
+                        img4.src = 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Janet-Jackson-The-Velvet-Rope-Album-Cover-web-optimised-820.jpg';
+                        img4.onload = function function2(){
+                          cx.fillStyle = "#ffffff";
+                          cx.fillRect(0, 0, 500, 400);
+                          var d = new Date();
+                          var hr = d.getHours();
+                          var mn = d.getMinutes();
+                          cx.fillStyle = '#503228';
+                          cx.fillText(hr + ":" + mn, 200, 200);
+                        }  
                       }
                         
                       window.onload = illustrated();
