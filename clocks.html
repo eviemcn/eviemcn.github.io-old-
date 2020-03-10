@@ -122,12 +122,8 @@
                         
                       function clear(){
                         var c = document.getElementById('myCanvas').getContext('2d');
-                        var img3 = new Image();
-                        img3.src = 'https://mcdn.wallpapersafari.com/medium/86/23/hgGPki.jpg';
-                        img3.onload = function function3(){
-                            c.fillStyle = "#ffffff";
-                            c.fillRect(0, 0, 500, 400);    
-                        }
+                        c.fillStyle = "#ffffff";
+                        c.fillRect(0, 0, 500, 400);    
                       }
                         
                       window.onload = illustrated();
