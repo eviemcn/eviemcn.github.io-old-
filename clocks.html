@@ -145,7 +145,11 @@
                           var mn = d.getMinutes();
                           cv.font = "100px Montserrat";
                           cv.fillStyle = '#ffffff';
-                          cv.fillText(hr + ":" + mn, 200, 200);
+                          if (mn < 10){
+                             cv.fillText(hr + ":0" + mn, 200, 200);
+                          } else{
+                             cv.fillText(hr + ":" + mn, 200, 200);
+                          }
                         }  
                       }
                         
