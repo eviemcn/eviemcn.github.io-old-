@@ -130,17 +130,17 @@
                       }
                         
                       displayTime(){
-                        var cx = document.getElementById('myCanvas').getContext('2d');
+                        var cv = document.getElementById('myCanvas').getContext('2d');
                         var img4 = new Image();
                         img4.src = 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Janet-Jackson-The-Velvet-Rope-Album-Cover-web-optimised-820.jpg';
-                        img4.onload = function function2(){
-                          cx.fillStyle = "#ffffff";
-                          cx.fillRect(0, 0, 500, 400);
+                        img4.onload = function function5(){
+                          cv.fillStyle = "#ffffff";
+                          cv.fillRect(0, 0, 500, 400);
                           var d = new Date();
                           var hr = d.getHours();
                           var mn = d.getMinutes();
-                          cx.fillStyle = '#503228';
-                          cx.fillText(hr + ":" + mn, 200, 200);
+                          cv.fillStyle = '#503228';
+                          cv.fillText(hr + ":" + mn, 200, 200);
                         }  
                       }
                         
