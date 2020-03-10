@@ -177,6 +177,10 @@ h2{
 .clock-section .buttons-row{
     padding-bottom: 5vmin; 
 }
+
+.clock-section{
+    padding-bottom: 5vmin;
+}
     
 footer .column i{
     color: white;
