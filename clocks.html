@@ -95,21 +95,21 @@
                         img.onload = function function1(){
                           ctx.fillStyle = "#ffffff";
                           ctx.fillRect(0, 0, 500, 400);
-                          ctx.drawImage(this, 0, 0, 500, 500);
+                          ctx.drawImage(this, 0, 50, 500, 500);
                           ctx.font         = '100px Odibee Sans';
                           var d = new Date();
                           var hr = d.getHours();
                           var mn = d.getMinutes();
                           ctx.fillStyle = '#503228';
                           if (hr < 10){
-                              ctx.fillText(hr, 140, 285);
+                              ctx.fillText(hr, 140, 235);
                           } else{
-                              ctx.fillText(hr, 91, 285);
+                              ctx.fillText(hr, 91, 235);
                           }
                           if (mn < 10){
-                            ctx.fillText("0" + mn, 223, 285);
+                            ctx.fillText("0" + mn, 223, 235);
                           } else {
-                            ctx.fillText(mn, 223, 285);
+                            ctx.fillText(mn, 223, 235);
                           }
                         }
                       }
