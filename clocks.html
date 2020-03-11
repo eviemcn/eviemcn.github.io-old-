@@ -115,6 +115,9 @@
                       }
                         
                       function illustrated(){
+                        var d = new Date();
+                        var hr = d.getHours();
+                        var mn = d.getMinutes();
                         var ct = document.getElementById('myCanvas').getContext('2d');
                         var img2 = new Image();
                         img2.src = '/assets/sketch-blue.png';
@@ -122,6 +125,12 @@
                           ct.fillStyle = "#ffffff";
                           ct.fillRect(0, 0, 500, 400);
                           ct.drawImage(this, 0, 0, 500, 400);
+                          ct.fillStyle = "#fff355";
+                          if (mn < 10){
+                             ct.fillText(hr + ":0" + mn, 200, 200);
+                          } else{
+                             ct.fillText(hr + ":" + mn, 200, 200);
+                          }
                         }
                       }
                         
