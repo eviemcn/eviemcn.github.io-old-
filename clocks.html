@@ -127,7 +127,7 @@
                         var ct = document.getElementById('myCanvas').getContext('2d');
                         var img2 = new Image();
                         var clr = "#506789";
-                        ct.font = "80px Cormorant Garamond";
+                        ct.font = "60px Cormorant Garamond";
                         if (hr == 1 || hr == 13){
                           img2.src = '/assets/sketch-blue.png';
                           clr = "#203865";
@@ -183,9 +183,9 @@
                           ct.drawImage(this, 0, 0, 500, 400);
                           ct.fillStyle = clr;
                           if (mn < 10){
-                             ct.fillText(hr + ":0" + mn + " " + tm, 200, 190);
+                             ct.fillText(hr + ":0" + mn + " " + tm, 200, 210);
                           } else{
-                             ct.fillText(hr + ":" + mn + " " + tm, 200, 190);
+                             ct.fillText(hr + ":" + mn + " " + tm, 200, 210);
                           }
                         }
                       }
