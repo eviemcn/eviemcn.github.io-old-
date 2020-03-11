@@ -120,7 +120,31 @@
                         var mn = d.getMinutes();
                         var ct = document.getElementById('myCanvas').getContext('2d');
                         var img2 = new Image();
-                        img2.src = '/assets/sketch-blue.png';
+                        if (hr == 1 || hr == 13){
+                          img2.src = '/assets/sketch-blue.png';
+                        } else if (hr == 2 || hr == 14){
+                          img2.src = '/assets/sketch-yellow.png';
+                        } else if (hr == 3 || hr == 15){
+                          img2.src = '/assets/sketch-purple.png';
+                        } else if (hr == 4 || hr == 16){
+                          img2.src = '/assets/sketch-bluenote.png';
+                        } else if (hr == 5 || hr == 17){
+                          img2.src = '/assets/sketch-maroon.png';
+                        } else if (hr == 6 || hr == 18){
+                          img2.src = '/assets/sketch-orange.png';
+                        } else if (hr == 7 || hr == 19){
+                          img2.src = '/assets/sketch-aqua.png';
+                        } else if (hr == 8 || hr == 20){
+                          img2.src = '/assets/sketch-grey.png';
+                        } else if (hr == 9 || hr == 21){
+                          img2.src = '/assets/sketch-pink.png';
+                        } else if (hr == 10 || hr == 22){
+                          img2.src = '/assets/sketch-green.png';
+                        } else if (hr == 11 || hr == 23){
+                          img2.src = '/assets/sketch-mustard.png';
+                        } else if (hr == 12 || hr == 24){
+                          img2.src = '/assets/sketch-alien.png';
+                        }
                         img2.onload = function function2(){
                           ct.fillStyle = "#ffffff";
                           ct.fillRect(0, 0, 500, 400);
