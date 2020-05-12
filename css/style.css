@@ -68,6 +68,10 @@ header .navbar .navbar-toggler i{
     margin-top: 10vmin;
 }
 
+.section-1 .row .multi-logo{
+    padding: 10vmin 0 10vmin 0;
+}
+
 .section-1 .row1 i{
     font-size: 3em;
     padding: 0 0 10vmin 0;
