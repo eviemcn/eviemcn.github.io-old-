@@ -68,7 +68,11 @@ header .navbar .navbar-toggler i{
 }
 
 .section-1 .row .multi-logo{
-    padding: 50vmin 0 10vmin 0;
+    padding: 10vmin 0 10vmin 0;
+}
+
+.section-1 .row .multi-logo img{
+    width: 80%;
 }
 
 .section-1 .row1 i{
