@@ -64,7 +64,7 @@ header .navbar .navbar-toggler i{
     color: darkgrey;
 }
 
-.section-1 .row{
+.section-1 .row #carouselExampleSlidesOnly{
     margin-top: 20vmin;
     margin-bottom: 10vmin;
 }
