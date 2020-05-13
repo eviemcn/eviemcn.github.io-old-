@@ -24,7 +24,7 @@ section{
     overflow-x: hidden;
 }
 
-header a{
+header .navbar-nav .nav-link{
     font-family: 'Quicksand';
     font-size: 1em;
     color: black;
