@@ -29,17 +29,6 @@
 </head>
 
 <body>
-    <script>
-    $(document).ready(function() {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=test&api_key=ede34f68bfab5ab14120091e2f7d41d0&limit=10&format=json&callback=?", function(json) {
-            var html = '';
-            $.each(json.topartists.artist, function(i, item) {
-                html += "<p><a href=" + item.url + " target='_blank'>" + item.name + " - " + "Play count : " +item.playcount + "</a></p>";
-            });
-            $('#result').append(html);
-        });
-    });
-    </script>
     <header>
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg fixed-top bg-light" id="nav1">
@@ -74,9 +63,10 @@
             <h4>Music :</h4>
             <p>Space to put music etc. Show off lastfm API play around. Maybe put in favourite albums currently etc.</p>
         </section>
-        <section class="section-5">
-            <div id="result"></div>
-        </section>
+        <div class="container-fluid page-section no-padding" id="album-collage">
+
+
+        </div>
         
     </main>
     <footer>
