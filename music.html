@@ -29,7 +29,7 @@
 <body>
     <script>
     $(document).ready(function() {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=test&api_key=ede34f68bfab5ab14120091e2f7d41d0&limit=10&format=json&callback=?", function(json) {
+        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=test&api_key=1a997e881a15d0fb18e84f8e22f6a0d4&limit=10&format=json&callback=?", function(json) {
             var html = '';
             $.each(json.topartists.artist, function(i, item) {
                 html += "<p><a href=" + item.url + " target='_blank'>" + item.name + " - " + "Play count : " +item.playcount + "</a></p>";
