@@ -21,39 +21,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     
     <!-- load jquery and jsrender libraries -->
-    <script type="text/javascript" src="scripts/js/jquery.js"></script>
-    <script type="text/javascript" src="scripts/js/jsrender.js"></script>
-    <!-- and new libraries to use lastfm -->
-    <script type="text/javascript" src="scripts/js/lastfm.api.md5.js"></script>
-    <script type="text/javascript" src="scripts/js/lastfm.api.js"></script>
-    <script type="text/javascript" src="scripts/js/lastfm.api.cache.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- define three templates for our units -->
-    <script id="lastfmTemplateArtists" type="text/x-jsrender">
-        <div id="{{:mbid}}" class="artist">
-            <a href="{{:url}}" rel="nofollow" target="_blank"><img src="{{:image[2]["#text"]}}" alt="{{:name}}" /><b>{{:name}}:</b></a>
-        </div>
-    </script>
-    <script id="lastfmTemplateArtistInfo" type="text/x-jsrender">
-        <div class="artist_info">
-            <a href="{{:url}}" rel="nofollow" target="_blank"><b>{{:name}}:</b><img src="{{:image[3]["#text"]}}" alt="{{:name}}" /></a>
-            <div><noindex>
-                {{:bio.content}}
-            </noindex></div>
-        </div>
-    </script>
-    <script id="lastfmTemplateTracks" type="text/x-jsrender">
-        {{if image}}
-        <div id="{{:mbid}}" class="track">
-            <a href="{{:url}}" rel="nofollow" target="_blank"><img src="{{:image[0]["#text"]}}" /><b>{{:name}}:</b></a>
-        </div>
-        {{/if}}
-    </script>
-    <script type="text/javascript" src="scripts/js/main.js"></script>
     
 </head>
 
 <body>
-
+    <script>
+    $(document).ready(function() {
+        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=test&api_key=ede34f68bfab5ab14120091e2f7d41d0&limit=10&format=json&callback=?", function(json) {
+            var html = '';
+            $.each(json.topartists.artist, function(i, item) {
+                html += "<p><a href=" + item.url + " target='_blank'>" + item.name + " - " + "Play count : " +item.playcount + "</a></p>";
+            });
+            $('#result').append(html);
+        });
+    });
+    </script>
     <header>
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg fixed-top bg-light" id="nav1">
@@ -89,20 +73,7 @@
             <p>Space to put music etc. Show off lastfm API play around. Maybe put in favourite albums currently etc.</p>
         </section>
         <section class="section-5">
-            <div class="content-main">
-                <div class="content-body">
-                    <h2>Top artists</h2>
-                    <div class="content-body-inner" id="top_artists"></div>
-                </div>
-                <div class="content-body">
-                    <h2>Top artist</h2>
-                    <div class="content-body-inner" id="top_artist"></div>
-                </div>
-                <div class="content-body">
-                    <h2>Top tracks</h2>
-                    <div class="content-body-inner" id="top_tracks"></div>
-                </div>
-            </div>
+            <div id="result"></div>
         </section>
         
     </main>
