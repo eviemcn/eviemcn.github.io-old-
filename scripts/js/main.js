@@ -95,3 +95,5 @@ function constructAlbumTextDiv(albumObj) {
 
     return textContainer;
 }
+
+window.onload = drawAlbums();
