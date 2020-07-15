@@ -243,10 +243,9 @@ h2{
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  padding: 0;
-  color: red;
+  padding: 5%;
+  color: white;
   font-family: 'Quicksand';
-  font-size: 0.05vmin !important;
 }
 
 .title-section{
