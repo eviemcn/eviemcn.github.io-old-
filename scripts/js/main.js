@@ -12,7 +12,7 @@ var info_wrapper_class = "album-info-wrapper";
 var info_class = "album-info";
 var info_text_class = "album-info-text";
 
-$("document").ready(function() {
+$(document).ready(function() {
 
     // request albums
     var albumsRequest = new XMLHttpRequest();
