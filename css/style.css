@@ -169,14 +169,8 @@ h2{
    padding: 0 0 10vmin 0;
 }
 
-.title-section{
-    padding: 20vmin 10vmin 0vmin 10vmin;
-}
-
-.title-section h4{
-    font-family: 'Quicksand';
-    font-size: 5vmin;
-    padding: 0 0 3vmin 0;
+.section-4 .buttons-row{
+  padding-bottom: 5vmin;
 }
 
 .album-cover {
@@ -189,6 +183,16 @@ h2{
   float: left;
   overflow: hidden;
   box-sizing: content-box;
+}
+
+.title-section{
+    padding: 20vmin 10vmin 0vmin 10vmin;
+}
+
+.title-section h4{
+    font-family: 'Quicksand';
+    font-size: 5vmin;
+    padding: 0 0 3vmin 0;
 }
 
 .clock-section .buttons-row{
