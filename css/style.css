@@ -156,7 +156,7 @@ h2{
 }
 
 .section-4{
-    padding: 20vmin 10vmin 10vmin 10vmin;
+    padding: 20vmin 10vmin 10vmin 0vmin;
 }
 
 .section-4 h4{
@@ -166,7 +166,7 @@ h2{
 }
 
 .section-4 p{
-   padding: 0 0 10vmin 0;
+   padding: 0 0 5vmin 0;
 }
 
 .section-4 .buttons-row{
@@ -177,9 +177,9 @@ h2{
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  width: 20%;
+  width: 16.67%;
   height: 0;
-  padding: 20% 0 0 0;
+  padding: 16.67% 0 0 0;
   float: left;
   overflow: hidden;
   box-sizing: content-box;
