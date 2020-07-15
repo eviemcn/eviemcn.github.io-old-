@@ -12,20 +12,16 @@ var info_wrapper_class = "album-info-wrapper";
 var info_class = "album-info";
 var info_text_class = "album-info-text";
 
-$(document).ready(function() {
+// request albums
+var albumsRequest = new XMLHttpRequest();
+albumsRequest.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) {
+        processAlbumsRequest(JSON.parse(this.response));
+    }
+};
 
-    // request albums
-    var albumsRequest = new XMLHttpRequest();
-    albumsRequest.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {
-            processAlbumsRequest(JSON.parse(this.response));
-        }
-    };
-
-    albumsRequest.open("GET", api_root + "?method=user.gettopalbums&period=1month&user=" + user + "&api_key=" + api_key + "&format=json")
-    albumsRequest.send();
-
-});
+albumsRequest.open("GET", api_root + "?method=user.gettopalbums&period=1month&user=" + user + "&api_key=" + api_key + "&format=json")
+albumsRequest.send();
 
 // loads the album cover grid based on the api response when top albums is requested.
 function processAlbumsRequest(response) {
