@@ -185,6 +185,20 @@ h2{
   box-sizing: content-box;
 }
 
+@media (max-width: 992px) {
+  .album-cover {
+    width: 20%;
+    padding: 20% 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .album-cover {
+    width: 33.3333%;
+    padding: 33.3333% 0 0 0;
+  }
+}
+
 .title-section{
     padding: 20vmin 10vmin 0vmin 10vmin;
 }
