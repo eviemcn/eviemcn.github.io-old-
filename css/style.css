@@ -243,7 +243,7 @@ h2{
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  padding: 5%;
+  padding: 0;
   color: white;
   font-family: 'Quicksand';
 }
