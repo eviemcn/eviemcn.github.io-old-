@@ -212,8 +212,6 @@ h2{
 
 .album-cover .text-container:hover {
   top: -100%;
-  animation-name: album-animate;
-  animation-duration: 1s;
 }
 
 .album-cover .text-container .album-link, .album-cover .text-container .album-info-wrapper {
@@ -248,20 +246,6 @@ h2{
   padding: 0;
   font-family: 'Quicksand';
  font-size: 0.2vmin;
-}
-
-.album-animation {
-  animation-name: album-animate;
-  animation-duration: 1s;
-}
-
-@keyframes album-animate {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -100%;
-  }
 }
 
 .title-section{
