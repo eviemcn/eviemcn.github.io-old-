@@ -34,6 +34,7 @@ function drawAlbums(){
 function processAlbumsRequest(response) {
 
     var container = document.getElementById("album-collage");
+    container.html = "";
     var albums = response.topalbums.album;
 
     // loop through all albums and render them in the div specified by id "album-collage".
