@@ -12,6 +12,11 @@ var info_wrapper_class = "album-info-wrapper";
 var info_class = "album-info";
 var info_text_class = "album-info-text";
 
+var artist_class = "artist-image";
+var artist_link_class = "artist-link";
+var artist_info_class = "artist-info";
+var artist_text_class = "artist-text";
+
 function drawAlbums(){
     // request albums
     var albumsRequest = new XMLHttpRequest();
@@ -94,6 +99,50 @@ function constructAlbumTextDiv(albumObj) {
     textContainer.appendChild(albumLinkElement);
 
     return textContainer;
+}
+
+function drawArtists(){
+    // request artists
+    var artistsRequest = new XMLHttpRequest();
+    artistsRequest.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            processArtistsRequest(JSON.parse(this.response));
+        }
+    };
+
+    artistsRequest.open("GET", api_root + "?method=user.gettopartists&period=1month&user=" + user + "&api_key=" + api_key + "&format=json")
+    artistsRequest.send();
+}
+
+// loads the artists based on the api response when top artists is requested.
+function processArtistsRequest(response) {
+
+    var container = document.getElementById("album-collage");
+    container.html = "";
+    var artists = response.topartists.artist;
+
+    // loop through all artists and render them in the div specified by id "album-collage".
+    for (var i = 0; i < artists.length; i++) {
+        var artist = artists[i];
+        var imageURL = artist.image[2]['#text'];
+
+        // create the artist-image.
+        var cover = document.createElement("div");
+        cover.className = artist_class;
+        cover.style.backgroundImage = "url('" + imageURL + "')";
+
+        // make the artist cover into a link
+        var artistLink = artist.url;
+        var artistLinkElement = document.createElement("a");
+        artistLinkElement = artistLink;
+        artistLinkElement.target = '_blank';
+        var linkSpan = document.createElement("span");
+        linkSpan.className = link_class;
+        artistLinkElement.appendChild(linkSpan);
+        cover.appendChild(artistLinkElement);
+
+        container.appendChild(cover);
+    }
 }
 
 window.onload = drawAlbums();
