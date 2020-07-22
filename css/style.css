@@ -183,7 +183,11 @@ h2{
   float: left;
   overflow: hidden;
   box-sizing: content-box;
-  opacity: 0.8;
+  opacity: 0.85;
+}
+
+.album-cover:hover {
+    opacity: 1.0;
 }
 
 .album-cover .text-container {
