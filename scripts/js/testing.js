@@ -31,7 +31,7 @@ function processAlbumsRequest(response) {
     var albums = response.topalbums.album;
 
     var album = albums[0];
-    var imageURL = album.image[2]['#text'];
+    var imageURL = album.image[3]['#text'];
 
     // create the album-cover.
     var outer = document.createElement("div");
