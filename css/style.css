@@ -237,7 +237,7 @@ h2{
     position: relative;
 }
 
-#album-collage:hover .album-cover {
+.album-cover:hover {
     transform: rotateY(180deg);
 }
 
