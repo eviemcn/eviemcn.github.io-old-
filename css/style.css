@@ -234,7 +234,6 @@ h2{
 #album-collage {
     transition: 0.5s;
     transform-style: preserve-3d;
-    position: relative;
 }
 
 .album-cover:hover {
@@ -243,7 +242,6 @@ h2{
 
 .album-cover .text-container, .album-cover {
     backface-visibility: hidden;
-    position: absolute;
 }
 
 .album-cover .text-container {
