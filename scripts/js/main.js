@@ -146,4 +146,4 @@ function processArtistsRequest(response) {
     }
 }
 
-window.onload = drawArtists();
+window.onload = drawAlbums();
