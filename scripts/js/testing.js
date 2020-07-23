@@ -40,7 +40,7 @@ function processAlbumsRequest(response) {
     flip_card.className = album_class;
     outer.appendChild(flip_card);
 
-    // construct the text div to overlay it and append it to the cover div.
+    // construct the text div to overlay it and append it to flip card
     var textDiv = constructAlbumTextDiv(album);
     flip_card.appendChild(textDiv);
     
