@@ -138,7 +138,7 @@ function processArtistsRequest(response) {
         artistLinkElement = artistLink;
         artistLinkElement.target = '_blank';
         var linkSpan = document.createElement("span");
-        linkSpan.className = link_class;
+        linkSpan.className = artist_link_class;
         artistLinkElement.appendChild(linkSpan);
         cover.appendChild(artistLinkElement);
 
@@ -146,4 +146,4 @@ function processArtistsRequest(response) {
     }
 }
 
-window.onload = drawAlbums();
+window.onload = drawArtists();
