@@ -173,31 +173,41 @@ h2{
   padding-bottom: 7vmin;
 }
 
-.album-cover {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 12.5%;
-  height: 0;
-  padding: 12.5% 0 0 0;
-  float: left;
-  overflow: hidden;
-  box-sizing: content-box;
+.album-outer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 12.5%;
+    height: 0;
+    padding: 12.5% 0 0 0;
+    float: left;
+    overflow: hidden;
+    box-sizing: content-box;
 }
 
-.album-cover .text-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.album-cover {
+    position: relative;
     width: 100%;
     height: 100%;
-    padding: 0;
-  }
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.album-outer:hover .album-cover {
+    transform: rotateY(180deg);
+}
+
+.album-front, .album-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
   
 
-.album-cover .text-container .album-link, .album-cover .text-container .album-info-wrapper {
+.album-cover .album-front .album-link, .album-cover .album-back .album-info-wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -206,13 +216,13 @@ h2{
     right: 0;
   }
   
-  .album-cover .text-container .album-info-wrapper {
+  .album-cover .album-back .album-info-wrapper {
     background-color: rgba(14, 23, 17, 0.8);
     padding: 0;
     margin: 0;
   }
   
-  .album-cover .text-container .album-info-wrapper .album-info {
+  .album-cover .album-back .album-info-wrapper .album-info {
     display: table;
     position: absolute;
     width: 100%;
@@ -222,7 +232,7 @@ h2{
     padding: 0;
   }
   
-  .album-cover .text-container .album-info-wrapper .album-info .album-info-text {
+  .album-cover .album-back .album-info-wrapper .album-info .album-info-text {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -230,28 +240,6 @@ h2{
     color: white;
     font-family: 'Roboto Condensed';
   }
-
-#album-collage {
-    transition: 0.5s;
-    transform-style: preserve-3d;
-}
-
-.album-cover:hover {
-    transform: rotateY(180deg);
-}
-
-.album-cover .text-container, .album-cover {
-    backface-visibility: hidden;
-}
-
-.album-cover .text-container {
-    z-index: 1;
-    transform: rotateY(180deg);
-}
-.album-cover {
-    z-index: 2; /* back side, placed above front */
-    transform: rotateY(0deg);
-}
 
 @media (max-width: 992px) {
   .album-cover {

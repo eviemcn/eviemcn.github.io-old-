@@ -4,10 +4,12 @@ var api_root = 'https://ws.audioscrobbler.com/2.0/';
 var lastfm_root = 'https://www.last.fm/music/';
 var speaker_class = 'glyphicon glyphicon-volume-up';
 
+var album_outer = "album-outer";
 var album_class = "album-cover";
+var cover_class = "album-front";
 var link_class = "album-link";
 var hover_class = "album-animation";
-var text_container_class = "text-container";
+var text_container_class = "album-back";
 var info_wrapper_class = "album-info-wrapper";
 var info_class = "album-info";
 var info_text_class = "album-info-text";
@@ -43,15 +45,21 @@ function processAlbumsRequest(response) {
         var imageURL = album.image[2]['#text'];
 
         // create the album-cover.
+        var outer = document.createElement("div");
+        outer.className = album_outer;
+        var flip_card = document.createElement("div");
+        flip_card.className = album_class;
+        outer.appendChild(flip_card);
         var cover = document.createElement("div");
-        cover.className = album_class;
+        cover.className = cover_class;
         cover.style.backgroundImage = "url('" + imageURL + "')";
+        flip_card.appendChild(cover);
 
         // construct the text div to overlay it and append it to the cover div.
         var textDiv = constructAlbumTextDiv(album);
 
-        cover.appendChild(textDiv);
-        container.appendChild(cover);
+        flip_card.appendChild(textDiv);
+        container.appendChild(outer);
     }
 }
 
