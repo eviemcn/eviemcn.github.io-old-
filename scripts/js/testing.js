@@ -39,16 +39,19 @@ function processAlbumsRequest(response) {
     var flip_card = document.createElement("div");
     flip_card.className = album_class;
     outer.appendChild(flip_card);
+
+    // construct the text div to overlay it and append it to the cover div.
+    var textDiv = constructAlbumTextDiv(album);
+    flip_card.appendChild(textDiv);
+    
     var cover = document.createElement("div");
     cover.className = cover_class;
     cover.style.backgroundImage = "url('" + imageURL + "')";
     flip_card.appendChild(cover);
 
-    // construct the text div to overlay it and append it to the cover div.
-    var textDiv = constructAlbumTextDiv(album);
-
-    flip_card.appendChild(textDiv);
     container.appendChild(outer);
+
+    
     
 }
 
