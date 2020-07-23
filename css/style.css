@@ -185,10 +185,6 @@ h2{
   box-sizing: content-box;
 }
 
-.album-cover:hover {
-    opacity: 1.0;
-}
-
 .album-cover .text-container {
     position: absolute;
     top: 0;
