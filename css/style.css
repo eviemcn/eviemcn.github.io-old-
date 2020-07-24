@@ -204,7 +204,7 @@ h2{
     transform: rotateY(0deg);
 }
 
-.album-back .text-info{
+.album-back .album-text{
     vertical-align: middle;
     text-align: center;
     color: white;

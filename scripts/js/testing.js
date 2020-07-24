@@ -8,7 +8,7 @@ var album_outer = "album-outer";
 var album_class = "album-cover";
 var cover_class = "album-front";
 var link_class = "album-link";
-var text_class = "text-info";
+var text_class = "album-text";
 var text_container_class = "album-back";
 
 function drawAlbums(){
