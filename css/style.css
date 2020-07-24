@@ -185,7 +185,7 @@ h2{
     height: 200px;
 }
 .album-cover {
-    transition: 0.5s;
+    transition: 1.0s;
     transform-style: preserve-3d;
     position: relative;
 }
