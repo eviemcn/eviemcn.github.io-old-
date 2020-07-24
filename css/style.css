@@ -201,6 +201,7 @@ h2{
 }
 
 .album-back {
+    z-index: 1;
     vertical-align: middle;
     text-align: center;
     padding: -5%;
@@ -210,6 +211,7 @@ h2{
 }
 
 .album-front {
+    z-index: 2;
     background-size: cover;
     box-sizing: content-box;
 }
