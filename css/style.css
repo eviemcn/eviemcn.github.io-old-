@@ -197,15 +197,19 @@ h2{
 .album-back {
     z-index: 1;
     transform: rotateY(180deg);
-    vertical-align: middle;
-    text-align: center;
-    color: white;
     background-color: rgb(14, 19, 16);
-    font-family: 'Roboto Condensed';
+
 }
 .album-front {
     z-index: 2; /* back side, placed above front */
     transform: rotateY(0deg);
+}
+
+.album-back .text-info{
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Condensed';
 }
 
 .title-section{

@@ -8,6 +8,7 @@ var album_outer = "album-outer";
 var album_class = "album-cover";
 var cover_class = "album-front";
 var link_class = "album-link";
+var text_class = "text-info";
 var text_container_class = "album-back";
 
 function drawAlbums(){
@@ -63,7 +64,7 @@ function constructAlbumTextDiv(albumObj) {
     var plays = albumObj.playcount;
     var albumLink = albumObj.url;
     var textContainer = document.createElement("div");
-    textContainer.className = text_container_class;
+    textContainer.className = text_class;
 
     var titleEl = document.createElement("h5");
     titleEl.appendChild(document.createTextNode(albumName));
@@ -86,7 +87,11 @@ function constructAlbumTextDiv(albumObj) {
     albumLinkElement.appendChild(linkSpan);
     textContainer.appendChild(albumLinkElement);
 
-    return textContainer;
+    var textWrapper = document.createElement("div");
+    textWrapper.className = text_container_class;
+    textWrapper.appendChild(textContainer);
+
+    return textWrapper;
 }
 
 window.onload = drawAlbums();
