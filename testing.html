@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <title>CSS 3D Rotation Effect</title>
 <style>
+    /* Google Font*/
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Poppins|Quicksand|Roboto+Condensed|Odibee+Sans|Cormorant+Garamond&display=swap');
+
     .flip-container {
         margin: 50px;
         perspective: 1000;
@@ -28,9 +31,12 @@
     .front {
         z-index: 1;
         transform: rotateY(180deg);
-      	background-color: orange;
-      	color: blue;
-      	text-align: center;
+        vertical-align: middle;
+        text-align: center;
+        padding: -5%;
+        color: white;
+        background-color: rgb(14, 19, 16);
+        font-family: 'Roboto Condensed';
     }
     .back {
         z-index: 2; /* back side, placed above front */
@@ -43,7 +49,9 @@
     <div class="flip-container">
         <div class="card">
             <div class="front">
-              <p>hey team</p>
+              <h1>Ungodly Hour</h1>
+              <h1>Chloe x Halle</h1>
+              <p>Plays: 27</p>
             </div>
             <div class="back">
                 <!-- back side content -->
