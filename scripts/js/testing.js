@@ -73,7 +73,7 @@ function constructAlbumTextDiv(albumObj) {
     artistEl.appendChild(document.createTextNode(artistName));
     textContainer.appendChild(artistEl);
 
-    var playCountEl = document.createElement("h5");
+    var playCountEl = document.createElement("p");
     playCountEl.appendChild(document.createTextNode("Plays: " + plays));
     textContainer.appendChild(playCountEl);
 
