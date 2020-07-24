@@ -211,6 +211,7 @@ h2{
 
 .album-front {
     background-size: cover;
+    box-sizing: content-box;
 }
 
 @media (max-width: 992px) {
