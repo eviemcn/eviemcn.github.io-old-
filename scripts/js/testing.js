@@ -48,6 +48,8 @@ function processAlbumsRequest(response) {
     var cover = document.createElement("div");
     cover.className = cover_class;
     cover.style.backgroundImage = "url('" + imageURL + "') no-repeat";
+    
+    flip_card.appendChild(cover);
 
     // make the album cover into a link
     var albumLink = album.url;
@@ -57,9 +59,7 @@ function processAlbumsRequest(response) {
     var linkSpan = document.createElement("span");
     linkSpan.className = link_class;
     albumLinkElement.appendChild(linkSpan);
-    cover.appendChild(albumLinkElement);
-    
-    flip_card.appendChild(cover);
+    flip_card.appendChild(albumLinkElement);
 
     container.appendChild(outer);
 }
