@@ -174,7 +174,8 @@ h2{
 }
 
 .album-outer {
-    width: 20%;
+    width: 200px;
+    height: 200px;
     perspective: 1000px;
     display: inline-block;
 }
