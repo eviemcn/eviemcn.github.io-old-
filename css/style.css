@@ -209,6 +209,7 @@ h2{
 .album-front {
     z-index: 2; /* back side, placed above front */
     transform: rotateY(0deg);
+    background-repeat: no-repeat;
 }
 
 .album-back .album-text{

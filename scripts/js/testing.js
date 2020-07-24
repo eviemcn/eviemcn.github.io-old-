@@ -47,7 +47,7 @@ function processAlbumsRequest(response) {
     
     var cover = document.createElement("div");
     cover.className = cover_class;
-    cover.style.backgroundImage = "url('" + imageURL + "') no-repeat";
+    cover.style.backgroundImage = "url('" + imageURL + "')";
     
     flip_card.appendChild(cover);
 
