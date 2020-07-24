@@ -48,12 +48,20 @@ function processAlbumsRequest(response) {
     var cover = document.createElement("div");
     cover.className = cover_class;
     cover.style.backgroundImage = "url('" + imageURL + "') no-repeat";
+
+    // make the album cover into a link
+    var albumLink = album.url;
+    var albumLinkElement = document.createElement("a");
+    albumLinkElement.href = albumLink;
+    albumLinkElement.target = '_blank';
+    var linkSpan = document.createElement("span");
+    linkSpan.className = link_class;
+    albumLinkElement.appendChild(linkSpan);
+    cover.appendChild(albumLinkElement);
+    
     flip_card.appendChild(cover);
 
     container.appendChild(outer);
-
-    
-    
 }
 
 
@@ -62,7 +70,6 @@ function constructAlbumTextDiv(albumObj) {
     var artistName = albumObj.artist.name;
     var albumName = albumObj.name;
     var plays = albumObj.playcount;
-    var albumLink = albumObj.url;
     var textContainer = document.createElement("div");
     textContainer.className = text_class;
 
@@ -77,15 +84,6 @@ function constructAlbumTextDiv(albumObj) {
     var playCountEl = document.createElement("p");
     playCountEl.appendChild(document.createTextNode("Plays: " + plays));
     textContainer.appendChild(playCountEl);
-
-    // make the album cover into a link
-    var albumLinkElement = document.createElement("a");
-    albumLinkElement.href = albumLink;
-    albumLinkElement.target = '_blank';
-    var linkSpan = document.createElement("span");
-    linkSpan.className = link_class;
-    albumLinkElement.appendChild(linkSpan);
-    textContainer.appendChild(albumLinkElement);
 
     var textWrapper = document.createElement("div");
     textWrapper.className = text_container_class;
