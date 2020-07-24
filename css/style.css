@@ -190,7 +190,7 @@ h2{
     transform: rotateY(180deg);
 }
 
-.album-front, .album-back {
+.album-back, .album-front {
     position: absolute;
     width: 100%;
     height: 100%;
