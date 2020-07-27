@@ -212,15 +212,19 @@ h2{
     background-repeat: no-repeat;
 }
 
-.album-back .album-text{
+.album-back .album-text {
     vertical-align: middle;
     text-align: center;
     color: white;
-    font-family: 'Roboto Condensed';
 }
 
-.album-back .album-text h5{
+.album-back .album-text h5 {
+    font-family: 'Quicksand';
     padding-top: 2vmin;
+}
+
+.album-back .album-text p {
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .title-section{
