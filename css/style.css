@@ -220,8 +220,7 @@ h2{
 }
 
 .album-back .album-text h5 {
-    font-family: 'Quicksand';
-    padding-top: 2vmin;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .album-back .album-text p {
