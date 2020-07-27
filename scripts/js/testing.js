@@ -28,8 +28,8 @@ function drawAlbums(){
 function processAlbumsRequest(response) {
 
     var container = document.getElementById("album-collage");
-    removeAlbums(container);
     var albums = response.topalbums.album;
+    removeAlbums(container, albums);
 
     var i;
     for (i = 0; i < albums.length; i++){
@@ -96,8 +96,8 @@ function constructAlbumTextDiv(albumObj) {
 }
 
 
-function removeAlbums(container){
-    for (var i = 0; i < container.childElementCount; i++){
+function removeAlbums(container, albums){
+    for (var i = 0; i < albums.length; i++){
         container.removeChild(container.childNodes[0]);
     }
 }
