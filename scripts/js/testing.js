@@ -31,37 +31,40 @@ function processAlbumsRequest(response) {
     container.html = "";
     var albums = response.topalbums.album;
 
-    var album = albums[0];
-    var imageURL = album.image[3]['#text'];
+    var i;
+    for (i = 0; i < 10; i++){
+        var album = albums[i];
+        var imageURL = album.image[3]['#text'];
 
-    // create the album-cover.
-    var outer = document.createElement("div");
-    outer.className = album_outer;
-    var flip_card = document.createElement("div");
-    flip_card.className = album_class;
-    outer.appendChild(flip_card);
+        // create the album-cover.
+        var outer = document.createElement("div");
+        outer.className = album_outer;
+        var flip_card = document.createElement("div");
+        flip_card.className = album_class;
+        outer.appendChild(flip_card);
 
-    // construct the text div to overlay it and append it to flip card
-    var textDiv = constructAlbumTextDiv(album);
-    flip_card.appendChild(textDiv);
-    
-    var cover = document.createElement("div");
-    cover.className = cover_class;
-    cover.style.backgroundImage = "url('" + imageURL + "')";
-    
-    flip_card.appendChild(cover);
+        // construct the text div to overlay it and append it to flip card
+        var textDiv = constructAlbumTextDiv(album);
+        flip_card.appendChild(textDiv);
+        
+        var cover = document.createElement("div");
+        cover.className = cover_class;
+        cover.style.backgroundImage = "url('" + imageURL + "')";
+        
+        flip_card.appendChild(cover);
 
-    // make the album cover into a link
-    var albumLink = album.url;
-    var albumLinkElement = document.createElement("a");
-    albumLinkElement.href = albumLink;
-    albumLinkElement.target = '_blank';
-    var linkSpan = document.createElement("span");
-    linkSpan.className = link_class;
-    albumLinkElement.appendChild(linkSpan);
-    flip_card.appendChild(albumLinkElement);
+        // make the album cover into a link
+        var albumLink = album.url;
+        var albumLinkElement = document.createElement("a");
+        albumLinkElement.href = albumLink;
+        albumLinkElement.target = '_blank';
+        var linkSpan = document.createElement("span");
+        linkSpan.className = link_class;
+        albumLinkElement.appendChild(linkSpan);
+        flip_card.appendChild(albumLinkElement);
 
-    container.appendChild(outer);
+        container.appendChild(outer);
+    }
 }
 
 
