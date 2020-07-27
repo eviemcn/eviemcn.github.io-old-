@@ -32,7 +32,7 @@ function processAlbumsRequest(response) {
     var albums = response.topalbums.album;
 
     var i;
-    for (i = 0; i < 10; i++){
+    for (i = 0; i < albums.length; i++){
         var album = albums[i];
         var imageURL = album.image[3]['#text'];
 
