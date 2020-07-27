@@ -10,6 +10,7 @@ var cover_class = "album-front";
 var link_class = "album-link";
 var text_class = "album-text";
 var text_container_class = "album-back";
+var album_count = 0;
 
 function drawAlbums(){
     // request albums
@@ -26,10 +27,11 @@ function drawAlbums(){
 
 // loads the album cover grid based on the api response when top albums is requested.
 function processAlbumsRequest(response) {
-
+    
+    removeAlbums(album_count);
     var container = document.getElementById("album-collage");
     var albums = response.topalbums.album;
-    //removeAlbums(container, albums);
+    album_count = albums.length;
 
     var i;
     for (i = 0; i < albums.length; i++){
@@ -101,6 +103,7 @@ function removeAlbums(albumCount){
     for (var i = 0; i < albumCount; i++){
         container.removeChild(container.childNodes[0]);
     }
+    album_count = 0;
 }
 
 window.onload = drawAlbums();
