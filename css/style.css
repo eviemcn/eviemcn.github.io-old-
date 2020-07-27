@@ -219,6 +219,10 @@ h2{
     font-family: 'Roboto Condensed';
 }
 
+.album-back .album-text h5{
+    padding-top: 2vmin;
+}
+
 .title-section{
     padding: 20vmin 10vmin 0vmin 10vmin;
 }
