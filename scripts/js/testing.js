@@ -96,10 +96,9 @@ function constructAlbumTextDiv(albumObj) {
 }
 
 
-function removeAlbums(response){
+function removeAlbums(albumCount){
     var container = document.getElementById("album-collage");
-    var albums = response.topalbums.album;
-    for (var i = 0; i < albums.length; i++){
+    for (var i = 0; i < albumCount; i++){
         container.removeChild(container.childNodes[0]);
     }
 }
