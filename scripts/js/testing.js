@@ -29,7 +29,7 @@ function processAlbumsRequest(response) {
 
     var container = document.getElementById("album-collage");
     var albums = response.topalbums.album;
-    removeAlbums(container, albums);
+    //removeAlbums(container, albums);
 
     var i;
     for (i = 0; i < albums.length; i++){
@@ -96,7 +96,9 @@ function constructAlbumTextDiv(albumObj) {
 }
 
 
-function removeAlbums(container, albums){
+function removeAlbums(response){
+    var container = document.getElementById("album-collage");
+    var albums = response.topalbums.album;
     for (var i = 0; i < albums.length; i++){
         container.removeChild(container.childNodes[0]);
     }
