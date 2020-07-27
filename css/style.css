@@ -203,7 +203,7 @@ h2{
 .album-back {
     z-index: 1;
     transform: rotateY(180deg);
-    background-color: rgb(14, 19, 16);
+    background-color: #333333;
 
 }
 .album-front {
