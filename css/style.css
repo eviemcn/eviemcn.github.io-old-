@@ -214,6 +214,9 @@ h2{
 }
 
 .album-back .album-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     vertical-align: middle;
     text-align: center;
     color: white;
