@@ -225,13 +225,11 @@ h2{
 }
 
 .album-back .album-text h5 {
-    /* padding-top: 1.8em; */
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto Condensed';
 }
 
 .album-back .album-text h6 {
-    /* padding-bottom: 0.8em; */
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto Condensed';
 }
 
 .album-back .album-text p {
