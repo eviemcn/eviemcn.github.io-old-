@@ -204,6 +204,8 @@ h2{
     z-index: 1;
     transform: rotateY(180deg);
     background-color: #333333;
+    display: table;
+    overflow: hidden;
 
 }
 .album-front {
@@ -217,9 +219,8 @@ h2{
     position: absolute;
     width: 80%;
     margin-left: 10%;
-    height: 70%;
-    margin-top: 15%;
-    vertical-align: middle !important; 
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
     color: white;
 }
