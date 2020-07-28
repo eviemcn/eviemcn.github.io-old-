@@ -222,8 +222,8 @@ h2{
     color: white;
 }
 
-.album-back .album-text h3 {
-    padding-top: 2.5em;
+.album-back .album-text h5 {
+    padding-top: 1.8em;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
