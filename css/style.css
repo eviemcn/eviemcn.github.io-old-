@@ -222,8 +222,13 @@ h2{
     color: white;
 }
 
+.album-back .album-text h3 {
+    padding-top: 2.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .album-back .album-text h6 {
-    padding-top: 1.67em;
+    padding-bottom: 0.8em;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
