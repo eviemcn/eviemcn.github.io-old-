@@ -78,11 +78,11 @@ function constructAlbumTextDiv(albumObj) {
     var textContainer = document.createElement("div");
     textContainer.className = text_class;
 
-    var titleEl = document.createElement("h5");
+    var titleEl = document.createElement("h6");
     titleEl.appendChild(document.createTextNode(albumName));
     textContainer.appendChild(titleEl);
 
-    var artistEl = document.createElement("h5");
+    var artistEl = document.createElement("h6");
     artistEl.appendChild(document.createTextNode(artistName));
     textContainer.appendChild(artistEl);
 
