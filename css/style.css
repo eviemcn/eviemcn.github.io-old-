@@ -217,18 +217,18 @@ h2{
     position: absolute;
     width: 100%;
     height: 100%;
-    vertical-align: middle;
+    vertical-align: middle !important; 
     text-align: center;
     color: white;
 }
 
 .album-back .album-text h5 {
-    padding-top: 1.8em;
+    /* padding-top: 1.8em; */
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .album-back .album-text h6 {
-    padding-bottom: 0.8em;
+    /* padding-bottom: 0.8em; */
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
