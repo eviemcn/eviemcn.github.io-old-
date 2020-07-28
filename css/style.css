@@ -216,7 +216,6 @@ h2{
 }
 
 .album-back .album-text {
-    position: absolute;
     width: 80%;
     margin-left: 10%;
     display: table-cell;
