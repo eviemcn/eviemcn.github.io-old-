@@ -215,7 +215,8 @@ h2{
 
 .album-back .album-text {
     position: absolute;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     height: 100%;
     vertical-align: middle !important; 
     text-align: center;
