@@ -11,4 +11,7 @@
         align-self: flex-end !important;
         padding: 5vmin 0 0 5vmin;
     }
+    .album-outer {
+        width: 33.33%;
+    }
 }
