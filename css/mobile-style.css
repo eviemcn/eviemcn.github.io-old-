@@ -16,8 +16,14 @@
     }
 }
 
+@media (max-width: 500px) {
+    .album-outer {
+      width: 50%;
+    }
+}
+
 @media (max-width: 992px) {
     .album-outer {
       width: 20%;
     }
-  }
+}
