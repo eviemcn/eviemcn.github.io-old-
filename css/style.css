@@ -181,7 +181,7 @@ h2{
 .album-outer:hover .album-cover {
     transform: rotateY(180deg);
 }
-.album-cover, .album-front, .album-back {
+.album-cover, .album-front {
     width: 100%;
     height: 0;
     padding: 0 0 100% 0;
@@ -208,6 +208,8 @@ h2{
     background-color: #333333;
     display: table;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 
 }
 .album-front {
