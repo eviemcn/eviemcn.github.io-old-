@@ -15,3 +15,9 @@
         width: 33.33%;
     }
 }
+
+@media (max-width: 992px) {
+    .album-outer {
+      width: 20%;
+    }
+  }
