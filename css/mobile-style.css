@@ -1,3 +1,9 @@
+@media only screen and (max-width: 992px) {
+    .album-outer {
+      width: 20%;
+    }
+}
+
 @media only screen and (max-width: 768px){
     header .navbar-brand{
         display: none;
@@ -16,14 +22,10 @@
     }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     .album-outer {
       width: 50%;
     }
 }
 
-@media (max-width: 992px) {
-    .album-outer {
-      width: 20%;
-    }
-}
+
