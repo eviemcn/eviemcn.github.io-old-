@@ -176,7 +176,7 @@ h2{
 .album-outer {
     perspective: 1000;
     display: inline-block;
-    width: 16%;
+    width: 12.5%;
 }
 .album-outer:hover .album-cover {
     transform: rotateY(180deg);
