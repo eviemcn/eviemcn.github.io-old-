@@ -115,10 +115,10 @@ function drawArtists(){
     artistsRequest.send();
 }
 
-function processAlbumsRequest(response) {
+function processArtistsRequest(response) {
     removeAlbums(album_count);
     var container = document.getElementById("album-collage");
-    var artists = response.topartists;
+    var artists = response.topartists.artist;
     album_count = artists.length;
 
     var i;
