@@ -128,8 +128,6 @@ function processArtistsRequest(response) {
 
         var outer = document.createElement("div");
         outer.className = artist_outer;
-        var textDiv = constructArtistTextDiv(artist);
-        outer.appendChild(textDiv);
         
         var artistImg = document.createElement("div");
         artistImg.className = artist_image;
@@ -144,8 +142,10 @@ function processArtistsRequest(response) {
         linkSpan.className = artist_link;
         artistLinkElement.appendChild(linkSpan);
         artistImg.appendChild(artistLinkElement);
-        
         outer.appendChild(artistImg);
+
+        var textDiv = constructArtistTextDiv(artist);
+        outer.appendChild(textDiv);
 
         container.appendChild(outer);
     }
