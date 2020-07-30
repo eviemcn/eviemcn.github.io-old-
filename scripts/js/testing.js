@@ -76,6 +76,16 @@ function processAlbumsRequest(response) {
         flip_card.className = album_class;
         outer.appendChild(flip_card);
 
+        flip_card.addEventListener('click', function() {
+            if (!this.classList.contains('on')) {
+                this.classList.remove('off');
+                this.classList.add('on');
+            } else {
+                this.classList.remove('on');
+                this.classList.add('off');
+            }
+        });
+
         // construct the text div to overlay it and append it to flip card
         var textDiv = constructAlbumTextDiv(album);
         flip_card.appendChild(textDiv);
@@ -137,13 +147,3 @@ function removeAlbums(albumCount){
 }
 
 window.onload = drawAlbums();
-
-flip_card.addEventListener('click', function() {
-    if (!this.classList.contains('on')) {
-        this.classList.remove('off');
-        this.classList.add('on');
-    } else {
-        this.classList.remove('on');
-        this.classList.add('off');
-    }
-});
