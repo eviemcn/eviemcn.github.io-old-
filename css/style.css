@@ -246,6 +246,16 @@ h2{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.on {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.off {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+
 .title-section{
     padding: 20vmin 10vmin 0vmin 10vmin;
 }
