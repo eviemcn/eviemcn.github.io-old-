@@ -138,9 +138,7 @@ function removeAlbums(albumCount){
 
 window.onload = drawAlbums();
 
-var card = document.getElementsByClassName(album_class);
-
-card.addEventListener('click', function() {
+flip_card.addEventListener('click', function() {
     if (!this.classList.contains('on')) {
         this.classList.remove('off');
         this.classList.add('on');
