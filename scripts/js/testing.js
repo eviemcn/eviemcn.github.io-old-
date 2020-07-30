@@ -111,7 +111,7 @@ function drawArtists(){
         }
     };
 
-    artistsRequest.open("GET", api_root + "?method=user.gettopaartists&period=1month&user=" + user + "&api_key=" + api_key + "&format=json")
+    artistsRequest.open("GET", api_root + "?method=user.gettopartists&period=1month&user=" + user + "&api_key=" + api_key + "&format=json")
     artistsRequest.send();
 }
 
