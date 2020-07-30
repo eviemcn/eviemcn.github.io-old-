@@ -17,9 +17,9 @@ var artist_image = "artist-image";
 var artist_link = "artist-link";
 var artist_text = "artist-text";
 
-var outer = document.getElementsByClassName(album_class);
+var card = document.getElementsByClassName(album_class);
 
-outer.addEventListener('click', function() {
+card.addEventListener('click', function() {
     if (!this.classList.contains('on')) {
         this.classList.remove('off');
         this.classList.add('on');
