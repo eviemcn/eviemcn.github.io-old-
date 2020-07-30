@@ -173,6 +173,10 @@ h2{
   padding-bottom: 7vmin;
 }
 
+#album-collage {
+    line-height: 0;
+}
+
 .album-outer {
     perspective: 1000;
     display: inline-block;
@@ -210,6 +214,7 @@ h2{
     overflow: hidden;
     width: 100%;
     height: 100%;
+    line-height: 1.1;
 
 }
 .album-front {
