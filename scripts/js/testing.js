@@ -12,6 +12,11 @@ var text_class = "album-text";
 var text_container_class = "album-back";
 var album_count = 0;
 
+var artist_outer = "artist-outer";
+var artist_image = "artist-image";
+var artist_link = "artist-link";
+var artist_text = "artist-text";
+
 function drawAlbums(){
     // request albums
     var albumsRequest = new XMLHttpRequest();
@@ -97,6 +102,71 @@ function constructAlbumTextDiv(albumObj) {
     return textWrapper;
 }
 
+function drawArtists(){
+    // request artists
+    var artistsRequest = new XMLHttpRequest();
+    artistsRequest.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            processArtistsRequest(JSON.parse(this.response));
+        }
+    };
+
+    artistsRequest.open("GET", api_root + "?method=user.gettopaartists&period=1month&user=" + user + "&api_key=" + api_key + "&format=json")
+    artistsRequest.send();
+}
+
+function processAlbumsRequest(response) {
+    removeAlbums(album_count);
+    var container = document.getElementById("album-collage");
+    var artists = response.topartists.artist;
+    album_count = artists.length;
+
+    var i;
+    for (i = 0; i < artists.length; i++){
+        var artist = artists[i];
+        var imageURL = artist.image[3]['#text'];
+
+        var outer = document.createElement("div");
+        outer.className = artist_outer;
+        var textDiv = constructArtistTextDiv(artist);
+        outer.appendChild(textDiv);
+        
+        var artistImg = document.createElement("div");
+        artistImg.className = artist_image;
+        artistImg.style.backgroundImage = "url('" + imageURL + "')";
+
+        // make the artist image into a link
+        var artistLink = artist.url;
+        var artistLinkElement = document.createElement("a");
+        artistLinkElement.href = artistLink;
+        artistLinkElement.target = '_blank';
+        var linkSpan = document.createElement("span");
+        linkSpan.className = artist_link;
+        artistLinkElement.appendChild(linkSpan);
+        artistImg.appendChild(artistLinkElement);
+        
+        outer.appendChild(artistImg);
+
+        container.appendChild(outer);
+    }
+}
+
+function constructArtistTextDiv(artistObj) {
+    var artistName = artistObj.name;
+    var plays = artistObj.playcount;
+    var textContainer = document.createElement("div");
+    textContainer.className = artist_text;
+
+    var titleEl = document.createElement("h5");
+    titleEl.appendChild(document.createTextNode(artistName));
+    textContainer.appendChild(titleEl);
+
+    var playCountEl = document.createElement("p");
+    playCountEl.appendChild(document.createTextNode("Plays: " + plays));
+    textContainer.appendChild(playCountEl);
+
+    return textContainer;
+}
 
 function removeAlbums(albumCount){
     var container = document.getElementById("album-collage");
