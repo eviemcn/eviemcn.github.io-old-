@@ -17,18 +17,6 @@ var artist_image = "artist-image";
 var artist_link = "artist-link";
 var artist_text = "artist-text";
 
-var card = document.getElementsByClassName(album_class);
-
-card.addEventListener('click', function() {
-    if (!this.classList.contains('on')) {
-        this.classList.remove('off');
-        this.classList.add('on');
-    } else {
-        this.classList.remove('on');
-        this.classList.add('off');
-    }
-});
-
 function drawAlbums(){
     // request albums
     var albumsRequest = new XMLHttpRequest();
@@ -149,3 +137,15 @@ function removeAlbums(albumCount){
 }
 
 window.onload = drawAlbums();
+
+var card = document.getElementsByClassName(album_class);
+
+card.addEventListener('click', function() {
+    if (!this.classList.contains('on')) {
+        this.classList.remove('off');
+        this.classList.add('on');
+    } else {
+        this.classList.remove('on');
+        this.classList.add('off');
+    }
+});
