@@ -182,9 +182,17 @@ h2{
     display: inline-block;
     width: 12.5%;
 }
-.album-outer:hover .album-cover {
+
+.album-outer:not(.manual-flip):hover .album-cover,
+.album-outer.hover.manual-flip .album-cover {
     transform: rotateY(180deg);
 }
+
+.album-outer.static:hover .album-cover,
+.album-outer.static.hover .album-cover {
+    transform: none;
+}
+
 .album-cover, .album-front {
     width: 100%;
     height: 0;
@@ -194,6 +202,7 @@ h2{
     transition: 0.8s;
     transform-style: preserve-3d;
     position: relative;
+    border: none;
 }
 
 .album-cover .album-link {
@@ -207,7 +216,7 @@ h2{
     position: absolute;
 }
 .album-back {
-    z-index: 1;
+    z-index: 3;
     transform: rotateY(180deg);
     background-color: #333333;
     display: table;
@@ -219,7 +228,6 @@ h2{
 }
 .album-front {
     z-index: 2; /* back side, placed above front */
-    transform: rotateY(0deg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -246,14 +254,20 @@ h2{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.on {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-}
-
-.off {
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
+@media all, all {
+    .album-front,
+    .album-back {}
+    .album-back {
+        visibility: hidden;
+    }
+    .album-front {
+        z-index: 4;
+    }
+    .album-outer:not(.manual-flip):hover .album-back,
+    .album-outer.manual-flip.hover .album-back {
+        z-index: 5;
+        visibility: visible;
+    }
 }
 
 .title-section{
