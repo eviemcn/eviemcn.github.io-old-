@@ -2,6 +2,12 @@
     .album-outer {
       width: 20%;
     }
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
 }
 
 @media only screen and (max-width: 768px){
