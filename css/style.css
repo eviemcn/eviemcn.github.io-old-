@@ -257,9 +257,6 @@ h2{
 @media all, all {
     .album-front,
     .album-back {}
-    .album-back {
-        visibility: hidden;
-    }
     .album-front {
         z-index: 1;
     }
