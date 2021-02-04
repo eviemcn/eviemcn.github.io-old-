@@ -30,7 +30,34 @@
 
 @media only screen and (max-width: 500px) {
     .album-outer {
-      width: 50%;
+      width: 33.33%;
+    }
+    #album-collage {
+      padding-right: 0;
+      padding-left: 0;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .section-4 {
+      padding: 20vmin 0vmin 10vmin 0vmin;
+    }
+    .section-4 #music-bio {
+      padding: 0 10vmin 5vmin 10vmin;
+    }
+    .section-4 h4 {
+      0 10vmin 7vmin 10vmin;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .album-back .album-text p {
+      font-size: 0.9rem;
+    }
+    .album-back .album-text h5 {
+      font-size: 0.9rem;
+    }
+    .album-back .album-text h6 {
+      font-size: 0.9rem;
     }
 }
 
