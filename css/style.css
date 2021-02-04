@@ -190,7 +190,7 @@ h2{
 
 .album-outer.static:hover .album-cover,
 .album-outer.static.hover .album-cover {
-    transform: none;
+    transform: rotateY(0deg);
 }
 
 .album-cover, .album-front {
