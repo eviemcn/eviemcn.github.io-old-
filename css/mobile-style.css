@@ -47,6 +47,9 @@
     .section-4 h4 {
       padding: 0 10vmin 7vmin 10vmin;
     }
+    .btn{
+      font-size: 0.9rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
