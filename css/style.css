@@ -216,7 +216,7 @@ h2{
     position: absolute;
 }
 .album-back {
-    z-index: 3;
+    z-index: 1;
     transform: rotateY(180deg);
     background-color: #333333;
     display: table;
@@ -261,11 +261,11 @@ h2{
         visibility: hidden;
     }
     .album-front {
-        z-index: 4;
+        z-index: 1;
     }
     .album-outer:not(.manual-flip):hover .album-back,
     .album-outer.manual-flip.hover .album-back {
-        z-index: 5;
+        z-index: 2;
         visibility: visible;
     }
 }
