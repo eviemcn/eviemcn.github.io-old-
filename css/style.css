@@ -235,6 +235,7 @@ h2{
 .album-back .album-text {
     width: 80%;
     margin-left: 10%;
+    padding: 0 1vmin 0 1vmin;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
