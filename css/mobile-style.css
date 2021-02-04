@@ -50,7 +50,7 @@
     .btn{
       font-size: 0.9rem;
     }
-    .col-md-2 {
+    .buttons-row .col-md-2 {
       width: 33.33%;
       padding-right: 1vmin;
       padding-left: 1vmin;
