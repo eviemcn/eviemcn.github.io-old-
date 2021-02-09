@@ -285,6 +285,16 @@ h2{
 .clock-section{
     padding-bottom: 5vmin;
 }
+
+.ako-section{
+    padding: 20vmin 10vmin 10vmin 10vmin;
+}
+
+.ako-section h4{
+    font-family: 'Quicksand';
+    font-size: 5vmin;
+    padding: 0 0 7vmin 0;
+}
     
 footer .column i{
     color: white;
