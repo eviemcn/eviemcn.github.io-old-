@@ -1,0 +1,25 @@
+/* Google Font*/
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Poppins|Quicksand|Roboto+Condensed|Odibee+Sans|Cormorant+Garamond&display=swap');
+
+/*Digital Font*/
+@font-face {
+ font-family:DS-DIGI;
+ src: url("../assets/DS_DIGI.TTF");
+} 
+@font-face {
+ font-family:DS-DIGI;
+ src: url("../assets/DS_DIGI.eot");
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header,
+section{
+    overflow-x: hidden;
+}
