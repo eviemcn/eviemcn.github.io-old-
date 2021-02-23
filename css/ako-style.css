@@ -24,11 +24,6 @@ section{
     overflow-x: hidden;
 }
 
-.ako-section{
-    padding: 20vmin 10vmin 10vmin 10vmin;
-}
-
-.ako-section h4{
-    font-size: 5vmin;
-    padding: 0 0 7vmin 0;
+.current-topics{
+    padding: 20vmin 0 10vmin 0;
 }
