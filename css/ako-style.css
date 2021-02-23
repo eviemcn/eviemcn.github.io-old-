@@ -34,3 +34,11 @@ section{
     left: auto;
     right: auto;
 }
+
+.carousel-control-prev {
+  margin-left: -100px;
+}
+
+.carousel-control-next {
+  margin-right: -100px;
+}
