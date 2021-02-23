@@ -31,8 +31,7 @@ section{
 
 .carousel-caption {
     position: relative;
-    left: auto;
-    right: auto;
+    width: 70%;
     padding-top: 5vmin;
 }
 
@@ -42,9 +41,4 @@ section{
 
 .carousel-control-next {
     margin-right: -15vmin;
-}
-
-.progress{
-    padding-top: 5vmin;
-    width: 60%;
 }
