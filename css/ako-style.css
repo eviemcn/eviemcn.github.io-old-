@@ -33,12 +33,18 @@ section{
     position: relative;
     left: auto;
     right: auto;
+    padding-top: 5vmin;
 }
 
 .carousel-control-prev {
-  margin-left: -15vmin;
+    margin-left: -15vmin;
 }
 
 .carousel-control-next {
-  margin-right: -15vmin;
+    margin-right: -15vmin;
+}
+
+.progress{
+    padding-top: 5vmin;
+    width: 60%;
 }
