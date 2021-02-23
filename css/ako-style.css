@@ -28,3 +28,9 @@ section{
     padding: 20vmin 0 10vmin 0;
     background-color: #e34f32;
 }
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
