@@ -36,9 +36,9 @@ section{
 }
 
 .carousel-control-prev {
-  margin-left: -100px;
+  margin-left: -10vmin;
 }
 
 .carousel-control-next {
-  margin-right: -100px;
+  margin-right: -10vmin;
 }
