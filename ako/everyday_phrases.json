@@ -1,0 +1,27 @@
+{
+	"phrase": {
+		"prompt": "Translate the following: ",
+		"value": "Kia ora",
+		"answers": [ "Hello", "Greetings" ],
+		"completed": false
+	}
+	"phrase": {
+		"prompt": "Translate the following: ",
+		"value": "Ko wai tō ingoa?",
+		"answers": [ "What is your name", "What is your name?" ],
+		"completed": false
+	}
+	"phrase": {
+		"prompt": "Translate the following: ",
+		"value": "Ko Mana taku ingoa",
+		"answers": [ "My name is Mana" ],
+		"completed": false
+	}
+	"phrase": {
+		"prompt": "Select the correct translation: ",
+		"value": "He aha?",
+		"options": [ "Who?", "Where?", "How?", "What?" ],
+		"answer": [ "What?" ],
+		"completed": false
+	}
+}
