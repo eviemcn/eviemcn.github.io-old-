@@ -308,6 +308,24 @@ h2{
     font-size: 5vmin;
     padding: 0 0 7vmin 0;
 }
+
+.guitar-section{
+    padding: 20vmin 10vmin 10vmin 10vmin;
+}
+
+.guitar-section h4{
+    font-family: 'Quicksand';
+    font-size: 5vmin;
+    padding: 0 0 7vmin 0;
+}
+
+.guitar-section #music-bio{
+   padding: 0 0 5vmin 0;
+}
+
+.guitar-section .buttons-row{
+  padding-bottom: 7vmin;
+}
     
 footer .column i{
     color: white;
