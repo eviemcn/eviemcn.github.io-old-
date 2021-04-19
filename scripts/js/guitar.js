@@ -11,7 +11,6 @@ function possibleAChords(possible, colour){
     var i;
     var count = 0;
     for (i = 0; i < strings.length; i++){
-        var display = "";
         var j;
         for (j = 1; j < strings[i].length; j++){
             if (possible == strings[i][j]){
