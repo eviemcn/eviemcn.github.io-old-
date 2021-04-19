@@ -24,11 +24,24 @@ function possibleAChords(possible, colour){
 }
 
 function drawChords(){
-  
+    var display = document.getElementById("guitar-display");
+    var table = document.createElement("table");
+    for (i = 0; i < 6; i++){
+        var row = document.createElement("tr");
+        for (j = 0; j < 20; j++){
+            var cell = document.createElement("td");
+            row.appendChild(cell);
+        }
+        table.appendChild(row);
+    }
+    display.appendChild(table);
+    
 }
 
 function drawTabs(){
-  
+    possibleAChords("D", "#f5c842");
+    possibleAChords("F#", "#4293f5");
+    possibleAChords("A", "#e342f5");
 }
 
 function drawMusicTheory(){
