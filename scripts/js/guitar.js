@@ -30,9 +30,9 @@ function emptyTable(){
 	for (i = 0; i < 6; i++){
         var j;
         for (j = 0; j < 20; j++){
-        	x[count].innerHTML = " ";
+          x[count].innerHTML = "&nbsp;";
           x[count].style.backgroundColor = "#ffffff";
-					count += 1;
+	  count += 1;
         }
     }
 }
