@@ -26,8 +26,10 @@ function possibleAChords(possible, colour){
 function drawChords(){
     var display = document.getElementById("guitar-display");
     var table = document.createElement("table");
+    var i;
     for (i = 0; i < 6; i++){
         var row = document.createElement("tr");
+        var j;
         for (j = 0; j < 20; j++){
             var cell = document.createElement("td");
             row.appendChild(cell);
