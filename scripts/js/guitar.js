@@ -26,7 +26,7 @@ function possibleAChords(possible, colour){
 function emptyTable(){
 	var x = document.getElementsByTagName("td");
 	count = 0;
-  var i;
+  	var i;
 	for (i = 0; i < 6; i++){
         var j;
         for (j = 0; j < 20; j++){
@@ -46,6 +46,7 @@ function drawChords(){
         var j;
         for (j = 0; j < 20; j++){
             var cell = document.createElement("td");
+	    cell.innerHTML = "&nbsp;";
             row.appendChild(cell);
         }
         table.appendChild(row);
