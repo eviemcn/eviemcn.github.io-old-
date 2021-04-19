@@ -334,6 +334,7 @@ h2{
 .guitar-section table{
   width: 100%;
   background-color: #ffffff;
+  border-spacing: 1px;
 }
     
 footer .column i{
