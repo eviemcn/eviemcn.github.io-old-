@@ -330,11 +330,13 @@ h2{
 .guitar-section td{
   text-align: center;
   border: 1px solid black;
+  width: 5%;
 }
 .guitar-section table{
   width: 100%;
   background-color: #ffffff;
   border-spacing: 1px;
+  table-layout: fixed;
 }
     
 footer .column i{
