@@ -326,6 +326,15 @@ h2{
 .guitar-section .buttons-row{
   padding-bottom: 7vmin;
 }
+
+.guitar-section td{
+  text-align: center;
+  border: 1px solid black;
+}
+.guitar-section table{
+  width: 100%;
+  background-color: #ffffff;
+}
     
 footer .column i{
     color: white;
