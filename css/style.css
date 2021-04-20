@@ -329,9 +329,10 @@ h2{
 
 .guitar-section td{
   text-align: center;
-  border: 2px solid black;
+  border: 1.5px solid black;
   width: 5%;
 }
+
 .guitar-section table{
   width: 100%;
   background-color: #ffffff;
