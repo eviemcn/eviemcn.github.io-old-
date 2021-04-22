@@ -320,10 +320,14 @@ h2{
 }
 
 .guitar-section #music-bio{
-   padding: 0 0 5vmin 0;
+   padding: 0 0 7vmin 0;
 }
 
 .guitar-section .buttons-row{
+  padding-bottom: 7vmin;
+}
+
+.guitar-section .dropdown-row{
   padding-bottom: 7vmin;
 }
 
