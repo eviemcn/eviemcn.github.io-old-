@@ -5,6 +5,7 @@ var G = ["G","G#","A","A#","B","C","C#","D","D#","E","F","F#","G","G#","A","A#",
 var B = ["B","C","C#","D","D#","E","F","F#","G","G#","A","A#","B","C","C#","D","D#","E","F","F#", "E"];
 var E2 = ["E","F","F#","G","G#","A","A#","B","C","C#","D","D#","E","F","F#","G","G#","A","A#","B", "C"];
 var strings = [E, A, D, G, B, E2];
+var colours = ['#C490D1', '#A0D2DB', '#7D8CC4', '#B8336A'];
 
 function possibleAChords(possible, colour){
     var x = document.getElementsByTagName("td");
@@ -55,25 +56,25 @@ function createTable(){
 
 function drawAChord(){
   emptyTable();
-  possibleAChords('A','#C490D1');
-  possibleAChords('C#','#A0D2DB');
-  possibleAChords('E','#7D8CC4');
+  possibleAChords('A', colours[0]);
+  possibleAChords('C#', colours[1]);
+  possibleAChords('E', colours[2]);
 }
 
 function drawBm7Chord(){
   emptyTable();
-  possibleAChords('B','#C490D1');
-  possibleAChords('D','#A0D2DB');
-  possibleAChords('F#','#7D8CC4');
-  possibleAChords('A','#B8336A');
+  possibleAChords('B',colours[0]);
+  possibleAChords('D', colours[1]);
+  possibleAChords('F#', colours[2]);
+  possibleAChords('A', colours[3]);
 }
 
 function drawA7Chord(){
   emptyTable();
-  possibleAChords('A','#C490D1');
-  possibleAChords('C#','#A0D2DB');
-  possibleAChords('E','#7D8CC4');
-  possibleAChords('G#','#B8336A');
+  possibleAChords('A',colours[0]);
+  possibleAChords('C#', colours[1]);
+  possibleAChords('E', colours[2]);
+  possibleAChords('G#', colours[3]);
 }
 
 function drawChord(){
