@@ -99,3 +99,5 @@ function drawTabs(){
 function drawMusicTheory(){
   
 }
+
+window.onload = drawChords();
