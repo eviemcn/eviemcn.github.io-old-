@@ -57,7 +57,7 @@
     <main>
        <section class="guitar-section">
             <h4>Guitar :</h4>
-            <p id="guitar-bio">An archive of things I am learning on guitar and information I learn while playing.</p>
+            <p id="guitar-bio">An archive of things I am learning on guitar and information I learn while playing. In the chords section you will find a tool I built to help visualise where certain notes are on the fretboard and help me find new ways to play some chords or a singular note.</p>
            <div class="row text-center buttons-row">
                    <div class="col-md-3"></div>
                    <div class="col-md-2">
@@ -74,16 +74,18 @@
            <div class="display" id="guitar-display">
                <div class="row text-center dropdown-row">
                <div class="col-md-4"></div>
-               <div class="col-md-4">  
+               <div class="col-md-4">
                    <div class="input-group">
-                      <select class="custom-select" id="inputGroupSelect04">
-                        <option selected>Select Chord...</option>
-                        <option value="1">A major</option>
-                        <option value="2">B minor 7</option>
-                        <option value="3">A major 7</option>
-                      </select>
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button" id="inputText" placeholder="Optional Note e.g. C# (flats not included)">
                       <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" onclick="drawChord()">Display</button>
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Chord</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" onlick="drawAChord()">A major</a>
+                          <a class="dropdown-item" onlick="drawA7Chord()">A major 7</a>
+                          <a class="dropdown-item" onlick="drawBm7Chord()">B minor 7</a>
+                          <div role="separator" class="dropdown-divider"></div>
+                          <a class="dropdown-item" onlick="drawCustom()">Custom Note</a>
+                        </div>
                       </div>
                     </div>
                 </div>
