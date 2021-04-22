@@ -76,6 +76,18 @@ function drawA7Chord(){
   possibleAChords('G#','#42f5b6');
 }
 
+function drawChord(){
+  var e = document.getElementById("inputGroupSelect04");
+  var num = e.value;
+  if (num == 1){
+	drawAChord();	  
+  } else if (num == 2){
+	drawBm7Chord();	  
+  } else if (num == 3){
+	drawA7Chord();	  
+  }
+}
+
 function drawChords(){
     createTable();
 }
