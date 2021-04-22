@@ -36,7 +36,7 @@ function emptyTable(){
     }
 }
 
-function drawChords(){
+function createTable(){
     var display = document.getElementById("guitar-display");
     var table = document.createElement("table");
     var i;
@@ -50,15 +50,38 @@ function drawChords(){
         }
         table.appendChild(row);
     }
-    display.appendChild(table);
-    
+    display.appendChild(table);    
+}
+
+function drawAChord(){
+  emptyTable();
+  possibleAChords('A','#e342f5');
+  possibleAChords('C#','#4293f5');
+  possibleAChords('E','#f5c842');
+}
+
+function drawBm7Chord(){
+  emptyTable();
+  possibleAChords('B','#e342f5');
+  possibleAChords('D','#4293f5');
+  possibleAChords('F#','#f5c842');
+  possibleAChords('A','#42f5b6');
+}
+
+function drawA7Chord(){
+  emptyTable();
+  possibleAChords('A','#e342f5');
+  possibleAChords('C#','#4293f5');
+  possibleAChords('E','#f5c842');
+  possibleAChords('G#','#42f5b6');
+}
+
+function drawChords(){
+    createTable();
 }
 
 function drawTabs(){
     emptyTable();
-    possibleAChords("D", "#f5c842");
-    possibleAChords("F#", "#4293f5");
-    possibleAChords("A", "#e342f5");
 }
 
 function drawMusicTheory(){
