@@ -77,16 +77,10 @@ function drawA7Chord(){
   possibleAChords('G#', colours[3]);
 }
 
-function drawChord(){
-  var e = document.getElementById("inputGroupSelect04");
-  var num = e.value;
-  if (num == 1){
-	drawAChord();	  
-  } else if (num == 2){
-	drawBm7Chord();	  
-  } else if (num == 3){
-	drawA7Chord();	  
-  }
+function drawCustom(){
+  var name = document.getElementById('inputText').value;
+  emptyTable();
+  possibleAChords(name,colours[0]);
 }
 
 function drawChords(){
