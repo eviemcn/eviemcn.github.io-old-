@@ -55,25 +55,25 @@ function createTable(){
 
 function drawAChord(){
   emptyTable();
-  possibleAChords('A','#e342f5');
-  possibleAChords('C#','#4293f5');
-  possibleAChords('E','#f5c842');
+  possibleAChords('A','#C490D1');
+  possibleAChords('C#','#A0D2DB');
+  possibleAChords('E','#7D8CC4');
 }
 
 function drawBm7Chord(){
   emptyTable();
-  possibleAChords('B','#e342f5');
-  possibleAChords('D','#4293f5');
-  possibleAChords('F#','#f5c842');
-  possibleAChords('A','#42f5b6');
+  possibleAChords('B','#C490D1');
+  possibleAChords('D','#A0D2DB');
+  possibleAChords('F#','#7D8CC4');
+  possibleAChords('A','#B8336A');
 }
 
 function drawA7Chord(){
   emptyTable();
-  possibleAChords('A','#e342f5');
-  possibleAChords('C#','#4293f5');
-  possibleAChords('E','#f5c842');
-  possibleAChords('G#','#42f5b6');
+  possibleAChords('A','#C490D1');
+  possibleAChords('C#','#A0D2DB');
+  possibleAChords('E','#7D8CC4');
+  possibleAChords('G#','#B8336A');
 }
 
 function drawChord(){
